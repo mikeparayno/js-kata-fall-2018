@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#popup {
+  position: absolute;
+}
+
+.popup_hide {
+  bottom: -10vh;
+}
+
+.popup_add {
+  animation-name: popup_add_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@keyframes popup_add_kf {
+  from {
+    bottom: -10vh;
+  }
+
+  to {
+    bottom: 10vh;
+  }
+}
+
+.popup_close {
+  animation-name: popup_close_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@keyframes popup_close_kf {
+  from {
+    bottom: 10vh;
+  }
+
+  to {
+    bottom: -10vh;
+  }
+}
+
+#popup_content {
+  width: 100vw;
+  height: 10vw;
+  position: absolute;
+  background-color: aquamarine;
+}
